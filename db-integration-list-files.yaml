@@ -1,0 +1,14 @@
+- description: list files
+  executionEnabled: true
+  id: bbce3109-08e6-4b9b-95a7-284a48c3ccd4
+  loglevel: INFO
+  name: db-integration-list-files
+  nodeFilterEditable: false
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - description: list files in directory
+      exec: cd $DIR_LOCATION && ls -l
+    keepgoing: false
+    strategy: node-first
+  uuid: bbce3109-08e6-4b9b-95a7-284a48c3ccd4
