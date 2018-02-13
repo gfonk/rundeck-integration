@@ -1,0 +1,14 @@
+- description: output will be hello world
+  executionEnabled: true
+  id: f2a96c10-90a5-4ff8-91d7-b6e03b4014d9
+  loglevel: INFO
+  name: db-integration-helloworld
+  nodeFilterEditable: false
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - description: echo output
+      exec: echo "hello rundeck"
+    keepgoing: false
+    strategy: node-first
+  uuid: f2a96c10-90a5-4ff8-91d7-b6e03b4014d9
